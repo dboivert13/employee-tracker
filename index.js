@@ -68,3 +68,14 @@ function startProgram() {
           }
   })
 }
+// View All Employees 
+function viewAllEmployees() {
+  connection.query("SELECT employee.first_name, employee.last_name, emp_role.title, emp_role.salary, department.deptName, CONCAT(e.first_name, ' ' ,e.last_name) AS Manager FROM employee INNER JOIN emp_role on emp_role.id = employee.role_id INNER JOIN department on department.id = emp_role.department_id left join employee e on employee.manager_id = e.id;", 
+  function(err, res) {
+    if (err) throw err
+    console.table(res)
+    startProgram();
+})
+}
+
+
