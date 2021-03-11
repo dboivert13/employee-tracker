@@ -1,4 +1,6 @@
 ----------------------- Department Table ----------------------------
+DROP DATABASE IF EXISTS employeeTracker_DB;
+CREATE database employeeTracker_DB;
 
 USE employeeTracker_DB;
 
