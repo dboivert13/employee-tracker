@@ -12,15 +12,15 @@ const connection = mysql.createConnection({
     password: 'TCQ4L!fe',
     database: 'employeeTracker_DB',
   });
-  
+
 // Connecting ...
   connection.connect(function(err) {
     if (err) throw err
     console.log("Connected as Id" + connection.threadId)
-    startPrompt();
+    startProgram();
 });
 
-function startPrompt() {
+function startProgram() {
   inquirer.prompt([
   {
   type: "list",
