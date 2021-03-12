@@ -78,4 +78,24 @@ function viewAllEmployees() {
 })
 }
 
+//View All Employee Roles
+function viewAllRoles() {
+  connection.query("SELECT employee.first_name, employee.last_name, emp_role.title AS Title FROM employee JOIN emp_role ON employee.role_id = emp_role.id;", 
+  function(err, res) {
+  if (err) throw err
+  console.table(res)
+  startProgram()
+  })
+}
+//View All Employees By Departments
+function viewAllDepartments() {
+  connection.query("SELECT employee.first_name, employee.last_name, department.deptName AS Department FROM employee JOIN emp_role ON employee.role_id = emp_role.id JOIN department ON emp_role.department_id = department.id ORDER BY employee.id;", 
+  function(err, res) {
+    if (err) throw err
+    console.table(res)
+    startProgram()
+  })
+}
+
+
 
