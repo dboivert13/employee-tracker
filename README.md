@@ -16,6 +16,8 @@
 Please reach out to me directly boivertdaniel@gmail.com
 
 ![Alt Text](./images/employeetracker.gif)
+
+Video Walk Thru Link - https://drive.google.com/file/d/1V6Ioq3mtFV3tzJlkn7zsYnfmqOeT7E-V/view
 # Acceptance Criteria
 Minimum Requirements:
 * Functional application. 
@@ -25,3 +27,4 @@ Minimum Requirements:
 ### MIT: https://choosealicense.com/licenses/mit/
 ### GitHub User Name: dboivert13
 ### Email: boivertdaniel@gmail.com
+
