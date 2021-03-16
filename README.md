@@ -14,6 +14,8 @@
 
 # Usage and Contributions
 Please reach out to me directly boivertdaniel@gmail.com
+
+![Alt Text](./images/employeetracker.gif)
 # Acceptance Criteria
 Minimum Requirements:
 * Functional application. 
